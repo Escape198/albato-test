@@ -8,7 +8,7 @@ url = 'https://api-test.albato.ru'
 
 # get token
 auth_token = ['/user/auth', 'post',
-              {'email': 'r.kirzhanov@albato.ru', 'password': 'Qweqwe2132.'}]
+              {'email': 'email', 'password': 'password'}]
 requests_auth = requests.post(url + auth_token[0], data=auth_token[2])
 token = requests_auth.json()['data']['authToken']
 headers = {'Authorization': 'Bearer {}'.format(token),
