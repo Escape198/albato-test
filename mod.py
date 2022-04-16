@@ -1,10 +1,7 @@
-
-
 import requests
 
 
 url = 'https://api-test.albato.ru'
-
 
 # get token
 auth_token = ['/user/auth', 'post',
